@@ -1,0 +1,15 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:StyleTest">
+    <Style x:Key="defaultStyle" TargetType="Button">
+        <Setter Property="Background" Value="{DynamicResource backgroud}"/>
+    </Style>
+
+    <Style x:Key="customStyle" TargetType="Button" BasedOn="{StaticResource defaultStyle}">
+
+    </Style>
+    <!--<Style TargetType="Button">
+        <Setter Property="Background" Value="{DynamicResource backgroud}"/>
+    </Style>-->
+    <Style TargetType="Button" BasedOn="{StaticResource defaultStyle}"/>
+</ResourceDictionary>
